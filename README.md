@@ -17,11 +17,11 @@ Issues:
 
 
 Home page displays.
-![Screenshot_1](public/assets/img/Screenshot_1.1.png)
+![Screenshot_1](public/assets/img/Screenshot_1.2.png)
 
 
 Data from burgers_db displays in the terminal. 
-![Screenshot_2](public/assets/img/Screenshot_1.2.png)
+![Screenshot_2](public/assets/img/Screenshot_1.1.png)
 
 
 
