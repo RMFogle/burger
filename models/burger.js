@@ -2,28 +2,28 @@
 var orm = require("../config/orm.js");
 
 var burger = {
-  all: function(bg) {
+  all: function(br) {
     orm.all("burgers", function(res) {
-      bg(res);
+      br(res);
     });
   },
   // The variables cols and vals are arrays.
   // Creates a new entry into the database.
-  create: function(cols, vals, bg) {
+  create: function(cols, vals, br) {
     orm.create("burgers", cols, vals, function(res) {
-      bg(res);
+      br(res);
     });
   },
   // Updates a specific entry in the database.
-  update: function(objColVals, condition, bg) {
+  update: function(objColVals, condition, br) {
     orm.update("burgers", objColVals, condition, function(res) {
-      bg(res);
+      br(res);
     });
   },
   // Deletes a specific entry in the database.
-  delete: function(condition, bg) {
+  delete: function(condition, br) {
     orm.delete("burgers", condition, function(res) {
-      bg(res);
+      br(res);
     });
   }
 };

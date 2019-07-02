@@ -1,7 +1,7 @@
 // Import MySql Connection. 
 var connection = require("../config/connection.js"); 
 
-// Helper function for SQL syntax.
+// Helper function for Mysql syntax. 
 function printQuestionMarks(num) {
     var arr = [];
   
@@ -16,7 +16,7 @@ function printQuestionMarks(num) {
   function objToSql(ob) {
     var arr = [];
   
-    // loop through the keys and push the key/value as a string int arr
+    // Loop through the keys and push the key/value as a string 
     for (var key in ob) {
       var value = ob[key];
       // check to skip hidden properties
@@ -29,7 +29,7 @@ function printQuestionMarks(num) {
       }
     }
   
-  // translate array of strings to a single comma-separated string
+  // Translate array of strings to a single string w/ comma seperation
     return arr.toString();
   }
   
@@ -64,7 +64,6 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    // An example of objColVals would be {name: cheeseburger, sleepy: true}
     update: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
