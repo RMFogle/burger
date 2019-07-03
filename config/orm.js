@@ -1,4 +1,4 @@
-// Import MySql Connection. 
+// Import MySql Connection. -- referenced: 14-Handlebars 16-MvcExample 
 var connection = require("../config/connection.js"); 
 
 // Helper function for Mysql syntax. 
